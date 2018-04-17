@@ -10,9 +10,9 @@ using DevExpress.XtraReports.Wizards.Views;
 
 namespace CustomWizardExample.Wizard.Presenters {
     class ChoosePersonsPage : ChooseReportTypePage<XtraReportModel> {
-        public ChoosePersonsPage(IChooseReportTypePageView view, IEnumerable<SqlDataConnection> dataConnections, 
+        public ChoosePersonsPage(IChooseReportTypePageView view, IConnectionStorageService connectionStorageService, 
             DataSourceTypes dataSourceTypes, IWizardRunnerContext context, ISolutionTypesProvider solutionTypesProvider)
-            : base(view, dataConnections, dataSourceTypes, context, solutionTypesProvider) {
+            : base(view, connectionStorageService, dataSourceTypes, context, solutionTypesProvider) {
         }
 
         public override Type GetNextPageType() {

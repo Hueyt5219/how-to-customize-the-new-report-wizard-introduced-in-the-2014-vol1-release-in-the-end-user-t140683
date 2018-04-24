@@ -24,10 +24,10 @@
         ''' </summary>
         Private Sub InitializeComponent()
             Me.rgDataSourceType = New DevExpress.XtraEditors.RadioGroup()
-            DirectCast(Me.panelBaseContent, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.panelBaseContent, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.panelBaseContent.SuspendLayout()
-            DirectCast(Me.panelAdditionalButtons, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.rgDataSourceType.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.panelAdditionalButtons, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.rgDataSourceType.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' buttonNext
@@ -81,10 +81,10 @@
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.Name = "ChoosePersonsPageView2"
             Me.Size = New System.Drawing.Size(448, 452)
-            DirectCast(Me.panelBaseContent, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.panelBaseContent, System.ComponentModel.ISupportInitialize).EndInit()
             Me.panelBaseContent.ResumeLayout(False)
-            DirectCast(Me.panelAdditionalButtons, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.rgDataSourceType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.panelAdditionalButtons, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.rgDataSourceType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 

@@ -21,7 +21,10 @@ Namespace CustomWizardExample
                 Dim firstName = GetAttributeValue(item, "FirstName")
                 Dim secondName = GetAttributeValue(item, "SecondName")
 
-                Dim person = New Person() With {.FirstName = firstName, .SecondName = secondName}
+                Dim person = New Person() With { _
+                    .FirstName = firstName, _
+                    .SecondName = secondName _
+                }
                 persons.Add(person)
             Next item
             Return persons
@@ -32,9 +35,18 @@ Namespace CustomWizardExample
         End Function
         Public Function GetStaticPersons() As IList(Of Person)
             Return New List(Of Person)( { _
-                New Person() With {.FirstName = "John", .SecondName = "Abbot"}, _
-                New Person() With {.FirstName = "Paul", .SecondName = "Bass"}, _
-                New Person() With {.FirstName = "George", .SecondName = "Chance"} _
+                New Person() With { _
+                    .FirstName = "John", _
+                    .SecondName = "Abbot" _
+                }, _
+                New Person() With { _
+                    .FirstName = "Paul", _
+                    .SecondName = "Bass" _
+                }, _
+                New Person() With { _
+                    .FirstName = "George", _
+                    .SecondName = "Chance" _
+                } _
             })
         End Function
     End Class
